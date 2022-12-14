@@ -34,7 +34,7 @@ private String extensionDriver = "";
     	        System.out.println("Se selecciona Chrome");
     	        WebDriverManager.chromedriver().setup();
     	        ChromeOptions chromeOptions = new ChromeOptions();
-    	        /* Activar si es necesario
+    	       
     			chromeOptions.addArguments("--ignore-certificate-errors");
     			chromeOptions.addArguments("--disable-extensions");
     			chromeOptions.addArguments("--disable-dev-shm-usage");
@@ -44,7 +44,7 @@ private String extensionDriver = "";
     			if (os.contains("linux")) {
     			  chromeOptions.addArguments("--headless");
     			}
-    			*/
+    			
     	        this.driver = (WebDriver)new ChromeDriver(chromeOptions);
     	        this.driver.manage().deleteAllCookies();
     	        break;
