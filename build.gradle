@@ -39,8 +39,7 @@ dependencies {
     implementation group: 'tech.grasshopper', name: 'extentreports-cucumber7-adapter', version: '1.9.2'
     implementation group: 'com.aventstack', name: 'extentreports', version: '5.0.9'
     implementation group: 'org.junit.vintage', name: 'junit-vintage-engine', version: '5.9.1'
-    testImplementation group: 'org.slf4j', name: 'slf4j-log4j12', version: '2.0.6', ext: 'pom'
-
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '2.0.6'
 }
 
 test {
