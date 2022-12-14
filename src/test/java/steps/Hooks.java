@@ -11,7 +11,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
-import static constants.Constant.URL;
+import static constants.Constant.URL_GOOGLE;
 
 public class Hooks{
 	public WebDriver driver;
@@ -25,7 +25,7 @@ public class Hooks{
 	@Before
     public void setUp(Scenario scenario)throws Throwable {
 	   this.scenario = scenario;
-       DriverContext.setUp(Navegador.Chrome, URL);
+       DriverContext.setUp(Navegador.Chrome, URL_GOOGLE);
     }
 
     
