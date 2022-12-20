@@ -20,7 +20,6 @@ public class Hooks{
 	
 	static {
 		takeEvidence = System.getProperty("evidence", "fullEvidence");
-		
 	}
 	@Before
     public void setUp(Scenario scenario)throws Throwable {

@@ -32,21 +32,22 @@ private String extensionDriver = "";
     	    switch (nav) {
     	       case Chrome:
     	        System.out.println("Se selecciona Chrome");
-    	        WebDriverManager.chromedriver().setup();
-    	        ChromeOptions chromeOptions = new ChromeOptions();
-			    /*
-    	       
-    			chromeOptions.addArguments("--ignore-certificate-errors");
-    			chromeOptions.addArguments("--disable-extensions");
-    			chromeOptions.addArguments("--disable-dev-shm-usage");
-    			chromeOptions.addArguments("--disable-gpu");
-    			chromeOptions.addArguments("--no-sandbox");
+				ChromeOptions chromeOptions = new ChromeOptions();
+				if (os.contains("linux")){
+					System.out.println("entre a linux");
+					System.out.println(System.getProperty("user.name"));
 
-    			if (os.contains("linux")) {
-    			  chromeOptions.addArguments("--headless");
-    			}
-			*/
-    			
+					chromeOptions.addArguments("--headless");
+					chromeOptions.addArguments("--disable-dev-shm-usage");
+					chromeOptions.addArguments("--ignore-certificate-errors");
+					chromeOptions.addArguments("--disable-extensions");
+					chromeOptions.addArguments("--remote-debugging-port=9222");
+					chromeOptions.addArguments("--disable-gpu");
+					chromeOptions.addArguments("--no-sandbox");
+					chromeOptions.addArguments("window-size=1920,1080");
+
+				}
+				WebDriverManager.chromedriver().setup();
     	        this.driver = (WebDriver)new ChromeDriver(chromeOptions);
     	        this.driver.manage().deleteAllCookies();
     	        break;
