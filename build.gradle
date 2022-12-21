@@ -39,6 +39,8 @@ dependencies {
     implementation group: 'tech.grasshopper', name: 'extentreports-cucumber7-adapter', version: '1.9.2'
     implementation group: 'com.aventstack', name: 'extentreports', version: '5.0.9'
     implementation group: 'org.junit.vintage', name: 'junit-vintage-engine', version: '5.9.1'
+    implementation group: 'tech.grasshopper', name: 'extent-pdf-report', version: '2.9.1'
+
 }
 
 test {
