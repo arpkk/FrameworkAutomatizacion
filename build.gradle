@@ -72,7 +72,7 @@ task runWithCucumber() {
 }
 
 task runWithCucumberforDebug() {
-    dependsOn assemble , testClasses, compileTestJava
+    dependsOn assemble , testClasses
     doLast {
         javaexec {
             main = "io.cucumber.core.cli.Main"
