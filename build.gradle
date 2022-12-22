@@ -39,6 +39,8 @@ dependencies {
     implementation group: 'tech.grasshopper', name: 'extentreports-cucumber7-adapter', version: '1.9.2'
     implementation group: 'com.aventstack', name: 'extentreports', version: '5.0.9'
     implementation group: 'org.junit.vintage', name: 'junit-vintage-engine', version: '5.9.1'
+    implementation group: 'io.cucumber', name: 'cucumber-testng', version: '7.10.1'
+
 }
 
 test {
@@ -54,7 +56,7 @@ configurations {
 def tags = (findProperty('tags') == null) ? 'not @Ignore' : findProperty('tags') + ' and not @Ignore'
 
 task runWithCucumber() {
-    dependsOn assemble, testClasses
+    dependsOn assemble , testClasses
     doLast {
         javaexec {
             main = "io.cucumber.core.cli.Main"

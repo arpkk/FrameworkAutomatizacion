@@ -1,8 +1,8 @@
 package runners;
 
+import io.cucumber.testng.CucumberOptions;
 import steps.Hooks;
 import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 
