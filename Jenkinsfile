@@ -1,5 +1,8 @@
 pipeline {
   agent any
+    tools {
+    nodejs "nodejs"
+  }
   environment {
     TEXTISSUE = "${params.TextIssue}"
   }
