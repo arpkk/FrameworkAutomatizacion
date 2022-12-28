@@ -1,12 +1,6 @@
-node {
-  withGradle {
-    sh "gradle runWithCucumber -P tags='@google'"
-  }
-}
-
 pipeline {
   agent any
-  tools{gradle "gr"}
+  tools{ gradle "Gradle 8.0-milestone-6"}
   environment {
     TEXTISSUE = "${params.TextIssue}"
   }
@@ -15,6 +9,7 @@ pipeline {
       steps {
         echo "hace algo"
         echo "$TEXTISSUE"
+        sh 'gradle runWithCucumber -P tags="@google"'
       }
     }
   }
