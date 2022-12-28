@@ -1,6 +1,6 @@
 pipeline {
   agent any
-  tools{ gradle "Gradle 8.0-milestone-6"}
+  tools{ gradle "gr"}
   environment {
     TEXTISSUE = "${params.TextIssue}"
   }
