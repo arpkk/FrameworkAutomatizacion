@@ -9,7 +9,9 @@ pipeline {
       steps {
         echo "hace algo"
         echo "$TEXTISSUE"
-        sh "gradle runWithCucumber -P tags=\"@google\""
+        sh """
+        gradle runWithCucumber -P tags=\'@google\'
+        """
       }
     }
   }
