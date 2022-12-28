@@ -1,15 +1,14 @@
 pipeline {
   agent any
-    tools {
-    nodejs "nodejs"
-  }
   environment {
     TEXTISSUE = "${params.TextIssue}"
+  }
+  withGradle {
+    sh "gradle runWithCucumber -P tags='@google'"
   }
   stages {
     stage('Build') {
       steps {
-        sh "gradle runWithCucumber -P tags='@google'"
         echo "hace algo"
         echo "$TEXTISSUE"
       }
