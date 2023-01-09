@@ -1,0 +1,15 @@
+{
+  "fields":{
+    "project": {
+      "id":"10001",
+      "key":"XRAY"
+    },
+    "summary":"PruebaDeRegresion",
+    "issueType":{
+      "name": "Test Execution"
+    }
+  },
+  "xrayFields": {
+    "testPlanKey":"XRAY-14"
+  }
+}
