@@ -1,5 +1,4 @@
-Feature: Busqueda de google, se esperar realizar e ingresar a una pagina utilizando el buscador de google.
-
+Feature: Busqueda de google
 
   Background:
   Given Ingresar a google
