@@ -14,6 +14,7 @@ pipeline {
     }
     stage('Build') {
       steps {
+        sh "gradle --version"
         sh "java --version"
         echo "$TESTPLAN"
         sh 'gradle runWithCucumber -P tags=\\"@TEST_XRAY-13\\"'
