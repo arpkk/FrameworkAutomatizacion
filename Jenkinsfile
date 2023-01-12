@@ -18,12 +18,13 @@ pipeline {
         sh "java --version"
         echo "$TESTPLAN"
         sh 'gradle clean runWithCucumber -P tags=\\"@TEST_XRAY-13\\"'
+        sh "chmod +x -R ${env.WORKSPACE}"
+
       }
     }
     /*
     stage('Jira'){
       steps {
-        sh "chmod +x -R ${env.WORKSPACE}"
         sh " IR=$TESTPLAN ./Attachment.sh IR "
       }
     }
