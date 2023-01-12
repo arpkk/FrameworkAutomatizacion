@@ -20,16 +20,14 @@ pipeline {
         sh 'gradle clean runWithCucumber -P tags=\\"@TEST_XRAY-13\\"'
       }
     }
-    /*
     stage('Jira'){
       steps {
+        sh "chmod +x -R ${env.WORKSPACE}"
         sh " IR=$TESTPLAN ./Attachment.sh IR "
       }
     }
-    */
     stage('Xray') {
       steps {
-        sh "chmod +x -R ${env.WORKSPACE}"
         echo "xray"
           sh '''
           token=$(curl -H "Content-Type: application/json" -X POST --data @"cloud_auth.json" https://xray.cloud.getxray.app/api/v2/authenticate| tr -d '"')
