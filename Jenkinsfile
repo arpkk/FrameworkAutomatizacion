@@ -35,11 +35,10 @@ pipeline {
           '''
       }
     }
-    /*
     stage('CleanWorkspace'){
       steps {
         cleanWs()
       }
-    }*/
+    }
   }
 }
