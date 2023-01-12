@@ -18,8 +18,6 @@ pipeline {
         sh "java --version"
         echo "$TESTPLAN"
         sh 'gradle clean runWithCucumber -P tags=\\"@TEST_XRAY-13\\"'
-        sh "chmod +x -R ${env.WORKSPACE}"
-
       }
     }
     /*
@@ -31,6 +29,7 @@ pipeline {
     */
     stage('Xray') {
       steps {
+        sh "chmod +x -R ${env.WORKSPACE}"
         echo "xray"
           sh '''
           token=$(curl -H "Content-Type: application/json" -X POST --data @"cloud_auth.json" https://xray.cloud.getxray.app/api/v2/authenticate| tr -d '"')
