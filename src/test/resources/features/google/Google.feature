@@ -3,7 +3,7 @@ Feature: Busqueda de google
   Background:
   Given Ingresar a google
 
-  @TEST_XRAY-22
+  @TEST_XRAY-21
   Scenario: Busqueda google
     When introduzco la palabra "Tsoft"
     And selecciono el resultado de la busqueda "Tsoft"
