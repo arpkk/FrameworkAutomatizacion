@@ -1,10 +1,9 @@
 #!/bin/bash
 echo $IR
 
-curl --location --request POST 'https://pruebaqmetry.atlassian.net/rest/api/3/issue/XRAY-21/attachments' \
-		--header 'Authorization: Basic Z2luYS5vemltaXNhQHRzb2Z0Z2xvYmFsLmNvbTpQclRkRkdiNmxvMEtLQXk5Rzd0cTI2NkM=' \
-		--header 'Content-Type: multipart/form-data' \
-		--header 'Cookie: atlassian.xsrf.token=5d3b4c67-268c-48e9-b2df-7d68175487ac_e9b0ba25c6a3ddeafd00fc4e74c28c189aac7608_lin' \
-		--header 'X-Atlassian-Token: no-check' \
-		--header 'Accept: application/json' \
-		--form 'file=@"'$WORKSPACE'/results/reporteQA.pdf"'
+	curl --location --request POST 'https://bootcamp-devops.atlassian.net/rest/api/3/issue/XRAY-21/attachments' \
+	--header 'Authorization: Basic Z2luYS5vemltaXNhQHRzb2Z0Z2xvYmFsLmNvbTpBVEFUVDN4RmZHRjBMOHBCaTVxS2NqamdINTdXVHRPNV9LRkhmWW9qVWotemRzMVlpWGg5Vjk3UXFFeExlS3prT2Vpcmc1WmpNbmRDZHJRRU5EU2NnWDM5S3E1N01vM1ZhdWF5bHdqeW10aWNhQ2JqMVFTZDFVZ2VoTUJRMTJEV1hNaWJZXzA5cW5wbmQ0Qm9JTUJ0MVFQNGxWWnptTWtwT0JGQ2w2ZjJwNlc0SWlrd2JKRGJ3b2s9RTZCQkUyMzI=' \
+	--header 'Content-Type: application/json' \
+	--header 'X-Atlassian-Token: no-check' \
+	--header 'Cookie: atlassian.xsrf.token=cec63393-9b34-46a4-a1d0-4e6984c71182_c09262cb32fc58415f510f533ac342bc22671b63_lin' \
+	--form 'file=@"'$WORKSPACE'/results/reporteQA.pdf"'
