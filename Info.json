@@ -5,7 +5,7 @@
         },
         "summary": "Brand new Test execution",
         "issuetype": {
-            "name": "Test Execution",
+            "id": "10402",
         },
         "components" : [
             {
