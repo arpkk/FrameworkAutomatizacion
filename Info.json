@@ -18,6 +18,5 @@
     },
     "xrayFields": {
         "testPlanKey": "XRAY-21",
-        "environments": ["Chrome", "Windows"]
     }
 }
