@@ -1,14 +1,21 @@
 {
-  "fields":{
-    "project": {
-      "id":"10001",
-      "key":"XRAY"
+  "fields": {
+        "project": {
+            "id": "10001"
+        },
+        "summary": "Brand new Test execution",
+        "issuetype": {
+            "id": "10007"
+        },
+        "components" : [
+            {
+            "name":"Interface"
+            },
+            {
+            "name":"Core"
+            }
+        ]
     },
-    "summary":"PruebaDeRegresion",
-    "issueType":{
-      "id": "10007"
-    }
-  },
   "xrayFields": {
     "testPlanKey":"XRAY-21"
   }
