@@ -1,11 +1,11 @@
 {
-  "fields": {
+    "fields": {
         "project": {
             "id": "10001"
         },
         "summary": "Brand new Test execution",
         "issuetype": {
-            "id": "10007",
+            "id": "10007"
         },
         "components" : [
             {
@@ -15,8 +15,9 @@
             "name":"Core"
             }
         ]
-  },
-  "xrayFields": {
-    "testPlanKey":"XRAY-21"
-  }
+    },
+    "xrayFields": {
+        "testPlanKey": "XRAY-21",
+        "environments": ["Chrome", "Windows"]
+    }
 }
