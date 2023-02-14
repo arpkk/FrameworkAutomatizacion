@@ -6,7 +6,7 @@
     },
     "summary":"PruebaDeRegresion",
     "issueType":{
-      "name": "Test Execution"
+      "id": "10402"
     }
   },
   "xrayFields": {
