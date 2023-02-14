@@ -1,11 +1,11 @@
 {
   "fields": {
         "project": {
-            "id": "10001"
+            "id": "11278"
         },
         "summary": "Brand new Test execution",
         "issuetype": {
-            "id": "10001"
+            "id": "11278"
         },
         "components" : [
             {
