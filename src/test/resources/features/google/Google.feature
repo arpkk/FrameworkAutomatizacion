@@ -1,13 +1,14 @@
-Feature: Busqueda de google
+Feature: TestGina
 
-  Background:
-  Given Ingresar a google
+	Background:
+		#@PRECOND_XRAY-27
+		Given Ingresar a google
 
-  @TEST_XRAY-22
-  Scenario: TestGina
-    When introduzco la palabra "Tsoft"
-    And selecciono el resultado de la busqueda "Tsoft"
-    Then se visualiza la pagina "https://www.tsoftglobal.com/"
+	@TEST_XRAY-25
+	Scenario: TestGina
+		When introduzco la palabra "Tsoft"
+		And selecciono el resultado de la busqueda "Tsoft"
+		Then se visualiza la pagina "https://www.tsoftglobal.com/"
 
   @TEST_XRAY-16
   Scenario Outline: Busqueda google parametrizada
