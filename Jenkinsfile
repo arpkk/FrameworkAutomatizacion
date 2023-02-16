@@ -5,6 +5,7 @@ pipeline {
   }
   environment {
     TESTPLAN = "${params.TESTPLAN}"
+    TAG = "${params.TAG}"
   }
   stages {
     stage('CleanWorkspace') {
@@ -27,8 +28,12 @@ pipeline {
         sh "gradle --version"
         sh "java --version"
         echo "$TESTPLAN"
+        echo "$TAG"
         sh "pwd"
-        sh 'gradle runWithCucumber -P tags="@TEST_XRAY-25"'
+        catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE')
+        {
+            sh 'gradle runWithCucumber -P tags="@$TAG"'
+        }
       }
     }
     stage('Jira') {
