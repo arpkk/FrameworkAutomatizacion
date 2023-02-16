@@ -10,12 +10,6 @@ Background:
 	And selecciono el resultado de la busqueda "Tsoft"
 	Then se visualiza la pagina "https://www.tsoftglobal.com/"
 
-Feature: TestGina2
-
-Background:
-	#@PRECOND_XRAY-27
-	Given Ingresar a google
-
 @TEST_XRAY-65
 Scenario Outline: TestGina2
 	When introduzco la palabra "<Busqueda>"
