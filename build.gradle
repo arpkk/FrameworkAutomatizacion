@@ -63,7 +63,7 @@ task runWithCucumber() {
                 tags = tags.replace(",", " or ")
             }
             args = [
-                    '--threads', '10',
+                    '--threads', '1',
                     '--plugin', 'pretty' ,
                     '--plugin', 'json:src/test/resources/output/report/Cucumber.json',
                     '--plugin', 'com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:',
