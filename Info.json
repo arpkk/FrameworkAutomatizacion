@@ -12,15 +12,7 @@
         ],
         "customfield_10039": {
            "id":"10027"
-        },
-        "components" : [
-            {
-            "name":"Interface"
-            },
-            {
-            "name":"Core"
-            }
-        ]
+        }
     },
   "xrayFields": {
     "testPlanKey":"XRAY"
