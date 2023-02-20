@@ -7,6 +7,9 @@
         "issuetype": {
             "id": "10008"
         },
+        "label": [
+            "LABEL"
+        ],
         "customfield_10039": {
            "id":"10027"
         },
