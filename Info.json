@@ -7,22 +7,20 @@
     "issuetype": {
       "id": "10008"
     },
-    "components": [
-      {
-        "name": "Interface"
-      },
-      {
-        "name": "Core"
-      }
-    ]
-  },
-  "labels": [
-    "LABEL"
-  ],
-  "customfield_10039": {
-    "id":"10027"
-  },
-  "xrayFields": {
-    "testPlanKey": "XRAY"
+    "assignee": {
+      "self": "https://bootcamp-devops.atlassian.net/rest/api/2/user?accountId=610ab842ec92ab0070d8bbc0",
+      "accountId": "610ab842ec92ab0070d8bbc0"
+    },
+    "description": "[~accountid:610ab842ec92ab0070d8bbc0]",
+    "labels": [
+      "LABEL"
+    ],
+    "customfield_10039": {
+      "value": "Smoke test",
+      "id": "10027"
+    },
+    "xrayFields": {
+      "testPlanKey": "XRAY"
+    }
   }
 }
