@@ -18,9 +18,9 @@
     "customfield_10039": {
       "value": "Smoke test",
       "id": "10027"
-    },
+    }
+  },
     "xrayFields": {
       "testPlanKey": "XRAY"
-    }
   }
 }
