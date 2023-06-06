@@ -1,5 +1,15 @@
 defaultTasks 'test'
 
+plugins {
+    id 'org.sonarqube' version '3.3'
+}
+
+sonarqube {
+    properties {
+        property 'sonar.host.url', 'http://localhost:9000' // Cambia la URL si SonarQube se ejecuta en un servidor diferente
+        // Agrega otras propiedades de configuración de SonarQube según tus necesidades
+    }
+}
 
 group 'cl.tsoft'
 version '1.0'
@@ -39,6 +49,7 @@ dependencies {
     implementation group: 'tech.grasshopper', name: 'extentreports-cucumber7-adapter', version: '1.9.2'
     implementation group: 'com.aventstack', name: 'extentreports', version: '5.0.9'
     implementation group: 'org.junit.vintage', name: 'junit-vintage-engine', version: '5.9.1'
+    implementation 'org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:3.3'
 }
 
 test {
