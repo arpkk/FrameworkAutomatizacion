@@ -1,5 +1,15 @@
 defaultTasks 'test'
 
+plugins {
+    id "org.sonarqube" version "4.0.0.2929"
+}
+
+sonar {
+    properties {
+        property 'sonar.host.url', 'http://45.33.22.170:9000/'
+    }
+}
+
 group 'cl.tsoft'
 version '1.0'
 
@@ -91,16 +101,6 @@ task runWithCucumberforDebug() {
                     'src/test/resources/features',
                     '--tags', "${tags}"]
         }
-    }
-}
-
-plugins {
-    id 'org.sonarqube' version '3.3'
-}
-
-sonarqube {
-    properties {
-        property 'sonar.host.url', 'http://45.33.22.170:9000/'
     }
 }
 
