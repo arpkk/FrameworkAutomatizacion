@@ -1,24 +1,17 @@
 group 'cl.tsoft'
 version '1.0'
 
-buildscript {
-    repositories {
-        maven {
-            url "https://plugins.gradle.org/m2/"
-        }
-    }
-}
-
-
 apply plugin: "java"
-apply plugin: "sonarqube"
 
-//plugins {
-//    id 'org.sonarqube' version '4.0.0.2929'
-//}
+plugins {
+    id 'org.sonarqube' version '4.0.0.2929'
+}
 
 repositories {
     mavenCentral()
+    maven {
+        url "https://plugins.gradle.org/m2/"
+    }
 }
 
 //sourceCompatibility = 17
@@ -53,7 +46,7 @@ configurations {
     }
 }
 
-sonarqube {
+sonar {
     properties {
         property 'sonar.host.url', 'http://45.33.22.170:9000/'
     }
