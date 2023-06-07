@@ -53,7 +53,7 @@ configurations {
     }
 }
 
-sonar {
+sonarqube {
     properties {
         property 'sonar.host.url', 'http://45.33.22.170:9000/'
     }
