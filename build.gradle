@@ -10,7 +10,7 @@ buildscript {
 }
 
 
-apply plugin: "java"
+//apply plugin: "java"
 
 plugins {
     id 'org.sonarqube' version '4.0.0.2929'
