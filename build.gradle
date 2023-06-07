@@ -1,8 +1,10 @@
-apply plugin: "java"
 
 plugins {
     id 'org.sonarqube' version '4.0.0.2929'
 }
+
+apply plugin: "java"
+
 
 group 'cl.tsoft'
 version '1.0'
