@@ -1,11 +1,11 @@
-group 'cl.tsoft'
-version '1.0'
-
 apply plugin: "java"
 
 plugins {
     id 'org.sonarqube' version '4.0.0.2929'
 }
+
+group 'cl.tsoft'
+version '1.0'
 
 repositories {
     mavenCentral()
