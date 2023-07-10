@@ -1,0 +1,42 @@
+pipeline:
+  name: testharness
+  identifier: testharness
+  projectIdentifier: manu
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: test_harness
+        identifier: test_harness
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  type: BuildAndPushDockerRegistry
+                  name: BuildAndPushDockerRegistry_1
+                  identifier: BuildAndPushDockerRegistry_1
+                  spec:
+                    connectorRef: account.harnessImage
+                    repo: 913114 / testhraness
+                    tags:
+                      - testharness
+              - step:
+                  type: Run
+                  name: Run_1
+                  identifier: Run_1
+                  spec: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: account.Github_OAuth_1687900399263
+        repoName: https://github.com/manoluky/DevopsTestMerge
+        build: <+input>
