@@ -55,11 +55,10 @@ private String extensionDriver = "";
     	        System.out.println("Se selecciona Explorer");
     	        this.capabilities.setCapability(InternetExplorerDriver.ENABLE_PERSISTENT_HOVERING, false);
     	        this.capabilities.setCapability(InternetExplorerDriver.REQUIRE_WINDOW_FOCUS, false);
-    	        this.capabilities.setCapability(InternetExplorerDriver.UNEXPECTED_ALERT_BEHAVIOR, true);
-    	        this.capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+		this.capabilities.setCapability("unexpectedAlertBehaviour", "accept");
+		this.capabilities.setCapability("acceptSslCerts", true);
     	        this.capabilities.setCapability(
     	            InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
-    	        this.capabilities.setJavascriptEnabled(true);
     	        WebDriverManager.iedriver().setup();
     	        this.driver = (WebDriver)new InternetExplorerDriver();
     	        this.capabilities.setBrowserName("Explorer");
