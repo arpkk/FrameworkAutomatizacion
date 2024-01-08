@@ -6,7 +6,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.GooglePage;
 import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class Google {
 
@@ -26,7 +25,7 @@ public class Google {
     @Then("se visualiza la pagina {string}")
     public void seVisualizaLaPagina(String result) {
         String url = DriverContext.getDriver().getCurrentUrl();
-        assertTrue(result.contains(url));
+        assertEquals(result, url);
     }
 
 
