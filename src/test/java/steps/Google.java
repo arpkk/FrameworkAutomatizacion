@@ -26,6 +26,6 @@ public class Google {
     @Then("se visualiza la pagina {string}")
     public void seVisualizaLaPagina(String result) {
         String url = DriverContext.getDriver().getCurrentUrl();
-        assertTrue(result.equals(url) || result.equals("www.tsoftglobal.com/en/home-english/"));
+        assertTrue(result.equals(url) || result.equals("https://www.tsoftglobal.com/en/home-english/"));
     }
 }
