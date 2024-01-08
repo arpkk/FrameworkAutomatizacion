@@ -24,7 +24,7 @@ public class GooglePage {
         PageFactory.initElements(this.driver, this);
     }
 
-    @FindBy(xpath = "//input[@name=\"q\"]")
+    @FindBy(xpath = "//*[@id=\"APjFqb\"]")
     WebElement inputText;
 
     @FindBy(xpath = "//input[@name=\"btnK\"]")
