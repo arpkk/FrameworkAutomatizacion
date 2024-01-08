@@ -33,7 +33,8 @@ private String extensionDriver = "";
     	       case Chrome:
     	        System.out.println("Se selecciona Chrome");
 				ChromeOptions chromeOptions = new ChromeOptions();
-				if (os.contains("linux")){
+				chromeOptions.addArguments("--disable-blink-features=AutomationControlled");
+				   if (os.contains("linux")){
 					System.out.println("entre a linux");
 					System.out.println(System.getProperty("user.name"));
 
