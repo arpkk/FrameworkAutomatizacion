@@ -8,9 +8,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
+
 
 import java.io.File;
 
@@ -33,7 +33,7 @@ private String extensionDriver = "";
     	       case Chrome:
     	        System.out.println("Se selecciona Chrome");
 				ChromeOptions chromeOptions = new ChromeOptions();
-				chromeOptions.addArguments("--disable-blink-features=AutomationControlled");
+
 				   if (os.contains("linux")){
 					System.out.println("entre a linux");
 					System.out.println(System.getProperty("user.name"));
