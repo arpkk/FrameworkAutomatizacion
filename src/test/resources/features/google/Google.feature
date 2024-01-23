@@ -1,11 +1,11 @@
-Feature: TestGina
+Feature: Default
 
 Background:
-	#@PRECOND_XRAY-27
+	#@PX-105
 	Given Ingresar a google
 
-@TEST_XRAY-25
-	Scenario: TestGina
+@PX-2
+Scenario: Test1
 	When introduzco la palabra "Tsoft"
 	And selecciono el resultado de la busqueda "Tsoft"
 	Then se visualiza la pagina "https://www.tsoftglobal.com/"
