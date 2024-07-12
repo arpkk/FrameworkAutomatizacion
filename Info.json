@@ -7,7 +7,7 @@
         "summary": "Prueba",
         "description": "",
         "issuetype": {
-            "name": "Test Execution"
+            "id": "10007"
         }
     },
     "xrayFields": {
