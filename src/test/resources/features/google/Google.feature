@@ -1,11 +1,11 @@
-Feature: Prueba
+Feature: Google
 
 Background:
-	#@PX-105
+	#@PRECOND_P1-6
 	Given Ingresar a google
 
-@TEST_P1-85
-Scenario: Prueba
+@TEST_P1-5
+Scenario: Google
 	When introduzco la palabra "Tsoft"
 	And selecciono el resultado de la busqueda "Tsoft"
 	Then se visualiza la pagina "https://www.tsoftglobal.com/"
